@@ -1,0 +1,95 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2021-06-22T00:25:50.830075+00:00",
+  "repo": "ShivanKaul/draft-ip-address-privacy",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njc0NTkxMTYw",
+      "title": "Propose slightly different structure for initial draft",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/1",
+      "state": "OPEN",
+      "author": "saradickinson",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-06-21T14:12:20Z",
+      "updatedAt": "2021-06-21T14:58:14Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "5eb8184f0367960246c27ed8e5fddd2b816db483",
+      "headRepository": "ShivanKaul/draft-ip-address-privacy",
+      "headRefName": "initial_draft",
+      "headRefOid": "e41d80aff3a69adf11191ec3c79b1cf44df4e728",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Njg4NTMwNzc1",
+          "commit": {
+            "abbreviatedOid": "e41d80a"
+          },
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "This makes sense to me - I think we should also change the draft name to be *less* general i.e. draft-ip-address-privacy-considerations",
+          "createdAt": "2021-06-21T14:58:14Z",
+          "updatedAt": "2021-06-21T14:58:14Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
