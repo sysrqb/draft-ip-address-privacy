@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-06-22T00:25:50.830075+00:00",
+  "timestamp": "2021-06-24T00:20:35.003741+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -56,24 +56,26 @@
       "id": "MDExOlB1bGxSZXF1ZXN0Njc0NTkxMTYw",
       "title": "Propose slightly different structure for initial draft",
       "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/1",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "saradickinson",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2021-06-21T14:12:20Z",
-      "updatedAt": "2021-06-21T14:58:14Z",
+      "updatedAt": "2021-06-22T17:08:30Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "5eb8184f0367960246c27ed8e5fddd2b816db483",
       "headRepository": "ShivanKaul/draft-ip-address-privacy",
       "headRefName": "initial_draft",
-      "headRefOid": "e41d80aff3a69adf11191ec3c79b1cf44df4e728",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "fa6a2eb158ff336da3f1e11dc5c55210d22615a0",
+      "closedAt": "2021-06-22T17:08:30Z",
+      "mergedAt": "2021-06-22T17:08:30Z",
+      "mergedBy": "ShivanKaul",
+      "mergeCommit": {
+        "oid": "253cb23a6cf7e1e7f33a069717020949ac28a323"
+      },
       "comments": [],
       "reviews": [
         {
@@ -87,6 +89,19 @@
           "body": "This makes sense to me - I think we should also change the draft name to be *less* general i.e. draft-ip-address-privacy-considerations",
           "createdAt": "2021-06-21T14:58:14Z",
           "updatedAt": "2021-06-21T14:58:14Z",
+          "comments": []
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Njg5NzgzNDY4",
+          "commit": {
+            "abbreviatedOid": "a024e7e"
+          },
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "I made a couple of minor changes",
+          "createdAt": "2021-06-22T17:08:24Z",
+          "updatedAt": "2021-06-22T17:08:24Z",
           "comments": []
         }
       ]
