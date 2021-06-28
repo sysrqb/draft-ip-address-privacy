@@ -2,14 +2,14 @@
 
 
 
-Network Working Group                                           S. Sahib
-Internet-Draft                                            Brave Software
-Intended status: Informational                              22 June 2021
-Expires: 24 December 2021
+Network Working Group                                              T. BD
+Internet-Draft                                                       TBD
+Intended status: Informational                              28 June 2021
+Expires: 30 December 2021
 
 
                    IP Address Privacy Considerations
-             draft-ip-address-privacy-considerations-latest
+                draft-ip-address-privacy-considerations
 
 Abstract
 
@@ -48,7 +48,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 December 2021.
+   This Internet-Draft will expire on 30 December 2021.
 
 Copyright Notice
 
@@ -213,7 +213,7 @@ Acknowledgments
 
 Author's Address
 
-   Shivan Sahib
-   Brave Software
+   Authors TBD
+   TBD
 
-   Email: shivankaulsahib@gmail.com
+   Email: tbd@tbd.com
