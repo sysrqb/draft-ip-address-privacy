@@ -79,7 +79,11 @@ This draft attempts to capture the following aspects of the tension between vali
 
 Account abuse, financial fraud, ad fraud, child abuse...
 
+XXX TODO
+
 ### DDoS and Botnets
+
+XXX TODO
 
 ## Privacy implications of IP addresses
 
@@ -91,29 +95,32 @@ Some mitigations are discussed below, however any holistic solution must ensure 
 
 The ability to track individual people by IP address has been well understood for decades. Commercial VPNs and Tor are the most common methods of mitigating IP address-based tracking.
 
-Commerical VPNs offer a layer of indirection between the user and the destination, however if the VPN endpoint's IP address is static then this simply substitutes one address for another. In addition, commerial VPNs replace tracking across sites with a single company that may track their users' activities.
+Commercial VPNs offer a layer of indirection between the user and the destination, however if the VPN endpoint's IP address is static then using this technique simply substitutes one address for another. In addition, commercial VPNs replace tracking across sites with a single company that may track their users' activities.
 
-Tor is another mitigation option due to its dynamic path selection and distributed network of relays, however its current design suffers from degraded performance. In addition, correct application integration is difficult and not common.
+Tor is another technical solution due to its distributed network of relays and dynamic path selection, however its current design suffers from degraded performance and its lack of abuse mitigation results in poor user experience. In addition, correct application integration is difficult and not common.
 
-Recent interest has resulted in new protocols such as Oblivious DNS ([ODoH](https://www.ietf.org/staging/draft-pauly-oblivious-doh-02.html)) and Oblivious HTTP ([OHTTP](https://www.ietf.org/archive/id/draft-thomson-http-oblivious-00.html)). While they both prevent tracking by individual parties, they are not intended for the general-purpose web browsing use case.
+Recent increased interest in privacy has resulted in new protocols such as Oblivious DNS ([ODoH](https://www.ietf.org/staging/draft-pauly-oblivious-doh-02.html)) and Oblivious HTTP ([OHTTP](https://www.ietf.org/archive/id/draft-thomson-http-oblivious-00.html)). While they both prevent tracking by individual parties, they are not intended for the general-purpose web browsing use case.
 
-Furthermore, [Gnatcatcher](https://github.com/bslassey/ip-blindness/blob/master/README.md) is a single-hop proxy system providing more protection against third-party tracking than a traditional commercial VPN. However, its design maintains the industry-standard reliance on IP addresses for anti-abuse purposes and it provides near backwards compatibility for select services that submit to periodic audits.
+Furthermore, [Gnatcatcher](https://github.com/bslassey/ip-blindness/blob/master/README.md) is a single-hop proxy system providing more protection against third-party IP address tracking than a traditional commercial VPN. Its design relies on the industry-standard usage of IP addresses for anti-abuse purposes and it provides near-backwards compatibility for select services that submit to periodic audits.
 
-Finally, iCloud Private Relay is described as using two proxies between the client and server, and it would provide a level of protection somewhere between a commercial VPN and Tor.
+Finally, [iCloud Private Relay](https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay/) uses two proxies between the client and server, and it would provide a level of protection somewhere between a commercial VPN and Tor. However, this service is only available on Apple devices and it is not globally available.
+
+# Enhancing IP Address Use Cases
+
+XXX TODO
 
 # Replacement signals for IP addresses
  
-Fundamentally, the current ecosystem operates by making the apparent path of a connection accountable for bad traffic, rather than the source of the traffic itself. This is problematic because in some cases IP addresses are shared by multiple clients (e.g., VPNs, Tor, carrier-grade NATs (CGNATs)) and any misbehavior associated with an address may be impermanent. Ideally, clients could gain a reputation and present proof of reputation that is separate from their apparent IP address, and uniquely bound
-to a given connection.
+Fundamentally, the current ecosystem operates by making the apparent path of a connection accountable for bad traffic, rather than the source of the traffic itself. This is problematic because in some cases IP addresses are shared by multiple clients (e.g., VPNs, Tor, carrier-grade NATs (CGNATs)) and any misbehavior associated with an address may be impermanent. Ideally, clients could gain a reputation and present proof of reputation that is separate from their apparent IP address and uniquely bind that proof of reputation to a given connection.
 
-Reputation services ([RFC7070](https://datatracker.ietf.org/doc/html/rfc7070)) are critical components present at multiple layers across the Internet and they are responsible for predicting whether a client will be abusive.  However, these services are constrainted by available identifiers when making a decision. As a result of this constraint, IP addresses tend to be an influential signal in the reputation assigned to an identity. Identifying alternatives for this dependency on IP addresses is
+Reputation services ([RFC7070](https://datatracker.ietf.org/doc/html/rfc7070)) are critical components present at multiple layers across the Internet and they are responsible for predicting whether a client will be abusive. However, these services are constrainted by available identifiers when making a decision. As a result of this constraint, IP addresses tend to be an influential signal in the reputation assigned to an identity. Identifying alternatives for this dependency on IP addresses is
 a goal of this document.
 
 ## Requirements
 
 Some [considerations](https://datatracker.ietf.org/doc/html/draft-kucherawy-repute-consid-00) about reputation services are documented already from the perspective of organizations being operationally reliant on a third-party service. However, these considerations are relevant for and extend to a service's impact on clients, as well.
 
-With the goal of replacing IP addresses as a fundemental signal in calculating a reputation, we describe two classes of requirements: properties of a replacement reputation signal, and properties of a reputation system. Each class is further divided into requirements of the client and requirements of the service.
+With a goal of replacing IP addresses as a fundemental signal in calculating a reputation, we describe two classes of requirements: properties of a replacement reputation signal, and properties of a reputation system. Each class is further divided into requirements of the client and requirements of the service.
 
 ### Required properties of replacement reputation signal
 
@@ -147,8 +154,13 @@ Technologies exist that solve problems in similar problem spaces, however none f
 
 [Trust Tokens](https://github.com/WICG/trust-token-api) are an extension of PrivacyPass where the tokens are allowed to carry private metadata. This additional metadata would allow for encoding information about a client's reputation, but Trust Tokens are not bound to an identity and they do not necessarily expire.
 
+[Fraud Resistant, Privacy Preserving Reporting Using Blind Signatures](https://github.com/siyengar/private-fraud-prevention)
+
+Direct Anonymous Attestation (DAA) provides a mechanism for binding a connection with a trusted platform module (TPM). [Previous research](https://eprint.iacr.org/2011/101.pdf) produced schemes that ex
+
 ## Potential new technologies
 
+XXX TODO
 
 # Security Considerations
 
