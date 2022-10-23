@@ -17,8 +17,8 @@ author:
  -
     ins: M. Finkel
     name: Matthew Finkel
-    organization: The Tor Project
-    email: sysrqb@torproject.org
+    organization: Apple Inc.
+    email: sysrqb@apple.com
  -
     ins: B. Lassey
     name: Bradford Lassey
@@ -35,7 +35,6 @@ author:
     name: J. Bradley Chen
     organization: Google
     email: bradchen@google.com
-
 
 normative:
 
@@ -284,7 +283,7 @@ SOURCE_ASN allows for identifying request patterns originating from an ASN witho
 
 Replacement signals are only useful if they are trustworthy.
 
-[[OPEN ISSUE: https://github.com/ShivanKaul/draft-ip-address-privacy/issues/24]]
+[OPEN ISSUE 24](https://github.com/ShivanKaul/draft-ip-address-privacy/issues/24)
 
 ### Applying Appropriate Signals
 
@@ -338,4 +337,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-[[OPEN ISSUE: TODO]]
+[OPEN ISSUE: TODO]()
